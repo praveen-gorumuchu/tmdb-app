@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug TMDB Server (Hot Reload)",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/server",
+        "runtimeArgs": [
+          "--loader",
+          "ts-node/esm",
+          "-r",
+          "tsconfig-paths/register"
+        ],
+        "args": ["${workspaceFolder}/server/src/index.ts"],
+        "autoAttachChildProcesses": true,
+        "envFile": "${workspaceFolder}/server/.env-dev",
+        "skipFiles": ["<node_internals>/**"],
+        "console": "integratedTerminal",
+        "restart": true
+      }
+    ]
+  }
+  
