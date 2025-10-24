@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import "./Header.scss";
+import "./header.scss";
 import { MenuConstant } from "@/constants/menu-constant";
 import { useEffect, useState } from "react";
 import { NumberConstant } from "@/constants/Numbers.constant";
